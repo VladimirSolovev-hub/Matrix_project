@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-double product(Matrix A, Matrix B, Matrix C);
+Matrix product(Matrix A, Matrix B, Matrix C);
 
 int main() {
     Matrix mat1(2, 2);
@@ -29,10 +29,12 @@ int main() {
 
     std::cout << "This is Matrix m6:" << std::endl;
     m6.printMatrix();
-    double c = product(m3, m4, mat1);
+    Matrix C = product(m3, m4, mat1);
 
-    std::cout << "This is matrix C" << c << std::endl;
+    std::cout << "This is matrix C" << std::endl;
+    C.printMatrix();
     return 0;
+
 }
 
 

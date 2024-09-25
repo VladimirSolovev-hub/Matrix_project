@@ -75,4 +75,4 @@ public:
 
 };
 
-double product(Matrix A, Matrix B, Matrix C);
+Matrix product(Matrix A, Matrix B, Matrix C);
