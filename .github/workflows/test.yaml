@@ -4,6 +4,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      -uses: actions/checkout@v4
-      -run: g++ matrix.cpp gauss.cpp -o matrix
-      -run: ./matrix
+      uses: actions/checkout@v4
+      run: g++ matrix.cpp gauss.cpp -o matrix
+      run: ./matrix
