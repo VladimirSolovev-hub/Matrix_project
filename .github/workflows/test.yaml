@@ -5,6 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: sudo apt-get update && sudo apt-get install -y cmake
-      - run: mkdir build && cmake -B build -S && cmake --build build
-      - run: ./build/nagel
+      - run: g++ matrix.cpp gauss.cpp -o matrix
+      - run: ./matrix
