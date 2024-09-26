@@ -1,8 +1,11 @@
 #include "matrix.h"
 #include <iostream>
+#include <cstdlib>
 
 
 Matrix product(Matrix A, Matrix B, Matrix C);
+
+double gauss(Matrix D);
 
 int main() {
     Matrix mat1(2, 2);

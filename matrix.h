@@ -76,3 +76,5 @@ public:
 };
 
 Matrix product(Matrix A, Matrix B, Matrix C);
+
+double gauss(Matrix D);
